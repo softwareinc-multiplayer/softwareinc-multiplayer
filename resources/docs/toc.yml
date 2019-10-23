@@ -1,6 +1,3 @@
 - name: API Documentation
   href: ../../SoftwareincMultiplayer/obj/api/
   homepage: api/index.md
-- name: Game Documentation
-  href: ../../SoftwareincMultiplayer/obj/game/
-  homepage: game/index.md

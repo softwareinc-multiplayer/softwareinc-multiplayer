@@ -14,33 +14,19 @@
         }
       ],
       "dest": "obj/api"
-    },
-    {
-      "src": [
-        {
-          "files": [
-            "Assembly-CSharp.dll"
-          ],
-          "src": "../resources/docs/game"
-        }
-      ],
-      "dest": "obj/game",
-      "filter": "docfxFilter.yml"
     }
   ],
   "build": {
     "content": [
       {
         "files": [
-          "api/**.yml",
-          "game/**.yml"
+          "api/**.yml"
         ],
         "src": "obj"
       },
       {
         "files": [
           "api/*.md",
-          "game/*.md",
           "toc.yml",
           "*.md"
         ],
