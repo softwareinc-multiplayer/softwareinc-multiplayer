@@ -48,6 +48,9 @@
     <Reference Include="UnityEngine">
       <HintPath>$(SOFTWAREINC_DATA)\Managed\UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(SOFTWAREINC_DATA)\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>$(SOFTWAREINC_DATA)\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
