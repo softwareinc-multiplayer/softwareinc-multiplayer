@@ -6,7 +6,7 @@
           "files": [
             "*.csproj"
           ],
-          "cwd": ".",
+          "src": ".",
           "exclude": [
             "**/obj/**",
             "**/bin/**"
@@ -14,23 +14,37 @@
         }
       ],
       "dest": "obj/api"
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "Assembly-CSharp.dll"
+          ],
+          "src": "../resources/docs/game"
+        }
+      ],
+      "dest": "obj/game",
+      "filter": "docfxFilter.yml"
     }
   ],
   "build": {
     "content": [
       {
         "files": [
-          "api/**.yml"
+          "api/**.yml",
+          "game/**.yml"
         ],
-        "cwd": "obj"
+        "src": "obj"
       },
       {
         "files": [
           "api/*.md",
+          "game/*.md",
           "toc.yml",
           "*.md"
         ],
-        "cwd": "../resources/docs"
+        "src": "../resources/docs"
       }
     ],
     "resource": [
@@ -38,7 +52,7 @@
         "files": [
           "images/**"
         ],
-        "cwd": "../resources/docs"
+        "src": "../resources/docs"
       }
     ],
     "overwrite": [
@@ -46,12 +60,15 @@
         "files": [
           "apidoc/**.md"
         ],
-        "cwd": "../resources/docs"
+        "src": "../resources/docs"
       }
     ],
     "dest": "../docs",
     "template": [
       "statictoc"
-    ]
+    ],
+    "globalMetadata": {
+      "_disableContribution": true
+    }
   }
 }
