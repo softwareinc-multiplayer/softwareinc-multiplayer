@@ -1,5 +1,0 @@
-apiRules:
-- include:
-    uidRegex: ^Game
-- exclude:
-    uidRegex: .*

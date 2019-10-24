@@ -51,9 +51,17 @@
     ],
     "dest": "../docs",
     "template": [
-      "statictoc"
+      "default"
     ],
+    "xrefService": [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
+    ],
+    "disableGitFeatures": true,
     "globalMetadata": {
+      "_appTitle": "Software Inc. Multiplayer",
+      "_appFooter": "Software Inc. Multiplayer",
+      "_enableSearch": true,
+      "_enableNewTab": true,
       "_disableContribution": true
     }
   }
